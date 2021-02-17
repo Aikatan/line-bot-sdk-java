@@ -43,7 +43,7 @@ public class EchoApplication {
         log.info("event: " + event);
         final String originalMessageText = event.getMessage().getText();
 		
-        return new TextMessage(originalMessageText);
+        return new TextMessage("123456");
     }
 
     @EventMapping
