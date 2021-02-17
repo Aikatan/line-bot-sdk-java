@@ -42,6 +42,7 @@ public class EchoApplication {
     public Message handleTextMessageEvent(MessageEvent<TextMessageContent> event) {
         log.info("event: " + event);
         final String originalMessageText = event.getMessage().getText();
+		String originalMessageText = "123456";
         return new TextMessage(originalMessageText);
     }
 
